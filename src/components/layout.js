@@ -26,21 +26,27 @@ const Layout = ({ isHomePage, children }) => {
             <Link to="/">{parse(title)}</Link>
           </h1>
         ) : (
-          <Link className="header-link-home" to="/">
-            {title}
-          </Link>
-        )}
+            <Link className="header-link-home" to="/">
+              {title}
+            </Link>
+          )}
       </header>
 
       <main>{children}</main>
 
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-        {` `}
-        And <a href="https://wordpress.org/">WordPress</a>
-      </footer>
+      <body>
+        <script src="/__/firebase/8.2.10/firebase-app.js"></script>
+        <script src="/__/firebase/8.2.10/firebase-analytics.js"></script>
+        <script src="/__/firebase/init.js"></script>
+
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          {` `}
+          And <a href="https://wordpress.org/">WordPress</a>
+        </footer>
+      </body>
     </div>
   )
 }
