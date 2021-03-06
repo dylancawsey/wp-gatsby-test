@@ -12,7 +12,7 @@ jobs:
     # env: ["dylan", "chris"]
 
     env:
-      WPGRAPHQL_URL: https://www.chris.clickkdev.com.au/graphql
+      WPGRAPHQL_URL: https://www.dylan.clickkdev.com.au/graphql
 
     steps:
       - uses: actions/checkout@v2
