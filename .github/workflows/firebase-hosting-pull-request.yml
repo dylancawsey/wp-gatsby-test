@@ -9,11 +9,12 @@ jobs:
 
     strategy:
       matrix:
-        env: ["dylan", "chris"]
+        env:
+          GRAPHQL_URL: ["dylan", "chris"]
 
     steps:
       - uses: actions/checkout@v2
-      - name: Build for env ${{ matrix.env }}
+      - name: Build for env ${{ matrix.env.GRAPHQL_URL }}
         uses: actions/setup-node@v1
         with:
           node-version: 14
