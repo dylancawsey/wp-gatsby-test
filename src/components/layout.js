@@ -34,8 +34,6 @@ const Layout = ({ isHomePage, children }) => {
 
       <main>{children}</main>
 
-      <script>console.log('process.env', process.env)</script>
-
       <body>
         <script src="/__/firebase/8.2.10/firebase-app.js"></script>
         <script src="/__/firebase/8.2.10/firebase-analytics.js"></script>

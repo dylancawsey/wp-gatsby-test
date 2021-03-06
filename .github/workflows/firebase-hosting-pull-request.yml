@@ -7,9 +7,12 @@ jobs:
   build_and_preview:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        env: ["dylan", "chris"]
+    # strategy:
+    # matrix:
+    # env: ["dylan", "chris"]
+
+    env:
+      WPGRAPHQL_URL: https://www.chris.clickkdev.com.au/graphql
 
     steps:
       - uses: actions/checkout@v2
