@@ -11,6 +11,7 @@ jobs:
     # matrix:
     # env: ["dylan", "chris"]
 
+    # TODO: figure out how to pass an array to this
     env:
       WPGRAPHQL_URL: https://www.dylan.clickkdev.com.au/graphql
 
